@@ -18,7 +18,7 @@ body {
 }
 .cabecalho__menu__link{
     color: #2055bc;
-    font-size :25px;
+    font-size :1.5625rem;
     text-decoration: none;
     border-radius: 12px;
     padding: 21px 15px
@@ -26,7 +26,7 @@ body {
 .cabecalho__menu__link:hover{
     background-color: #2055bc;
     color: #f1f5ff;
-    font-size :25px;
+    font-size :1.5625rem;
     text-decoration: none;
     border-radius: 12px;
     padding: 21px 15px;
@@ -49,15 +49,16 @@ body {
     justify-content: space-between;
 }
 .texto-inicial{
-    font-size: 80px;
+    font-size: 5rem;
 }
 .subtitulos{
     background-color:#f1f5ff ;
     color: #16181c;
     border-radius: 8px;
-    font-size: 40px;
+    font-size: 2.5rem;
     width: 200px;
     padding: 21px 21px;
+    text-align: center;
 }
 .galeria {
     padding: 0 10%; 
@@ -79,7 +80,28 @@ body {
 }
 .footer{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5625rem;
     background-color:#2055bc;
     padding: 21px 21px;
+}
+@media(max-width:1200px){
+    .apresentacao{
+        flex-direction:column;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .cabecalho{
+        padding:10% 0% 0% 0%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao__conteudo {
+        width: 60%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap :40px;
+    }
 }
